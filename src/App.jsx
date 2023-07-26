@@ -26,11 +26,11 @@ function App() {
 
   return (
     <div className="container">
-      <h1>ToDo App</h1>
+      <h1>Lista de Tarefas</h1>
       <div className="top">
         <input
           type="text"
-          placeholder="Add todo"
+          placeholder="Adicionar Tarefa..."
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
@@ -43,7 +43,7 @@ function App() {
               : () => addTodo(text, setText, setTodos)
           }
         >
-          {isUpdating ? "Update" : "Add"}
+          {isUpdating ? "Atualizar" : "Adicionar"}
         </div>
       </div>
 
